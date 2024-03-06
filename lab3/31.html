@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Laba 3</title>
+    <meta charset="UTF-8" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+
+    <style type="text/css">
+      .colored {
+        background-color: lightblue;
+      }
+    </style>
+
+    <script type="text/javascript" src="scripts.js"></script>
+  </head>
+
+  <body>
+    <div id="ID123">
+      <h1>Расписание ИУ6-34Б</h1>
+      <table class="table">
+        <tr>
+          <th>ПН.</th>
+          <th>Время</th>
+          <th style="background-color: silver">ЧС</th>
+          <th style="background-color: lightsteelblue">ЗН</th>
+        </tr>
+        <tr>
+          <td rowspan="6"></td>
+          <td class="colored">8:30 - 10:05</td>
+          <td colspan="2">
+            (сем) Элективный курс по физической культуре и спорту каф. ФВ
+          </td>
+        </tr>
+
+        <td class="colored">10:15 - 11:50</td>
+        <td colspan="2">
+          (лек) Теория вероятностей и математическая статистика 744л Горяинов В.
+          Б.
+        </td>
+        <tr>
+          <td class="colored">12:00 - 13:35</td>
+          <td colspan="2">(сем) Иностранный язык каф. Л2</td>
+        </tr>
+
+        <td class="colored">13:50 - 15:25</td>
+        <td></td>
+        <td>(сем) Теория вероятностей и математическая статистика 618л</td>
+        <tr>
+          <td class="colored">15:40 - 17:15</td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+    </div>
+
+    <div>
+      <p>DOM_элеменеты:</p>
+
+      <script>
+        printDOM(document.getElementById("ID123"), "&nbsp;");
+      </script>
+    </div>
+  </body>
+</html>

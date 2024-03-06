@@ -1,0 +1,52 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 40px;
+}
+
+main {
+  margin-top: 15px;
+}
+
+footer {
+  height: 40px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.my-primary {
+  background-color: #ee0057;
+  color: white;
+}
+
+.center {
+  text-align: center;
+}
+
+.centerel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-wrap {
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.img-size {
+  border-color: white;
+  border-radius: 3px;
+  width: 300px;
+  height: 400px;
+}
+
+td.new-selector:hover {
+  background-color: #ee005740;
+}
