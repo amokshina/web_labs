@@ -1,0 +1,16 @@
+<h1>Number#index</h1>
+<p>Find me in app/views/number/index.html.erb</p>
+<h1>Автоморфные числа</h1>
+
+<% flash.each do |key, value| %>
+  <div class="alert alert-<%= key %>">
+    <%= value %>
+  </div>
+<% end %>
+
+<%= form_tag("/numbers/view", :method => "get") do %>
+  <%= label_tag("Введите число:") %>
+  <%= text_field_tag(:v1, 123, min: 1, step: 1, required: true) %> <br/>
+  <br/>
+  <%= submit_tag("Результат") %>
+<% end %>

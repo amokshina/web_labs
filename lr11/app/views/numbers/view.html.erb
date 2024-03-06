@@ -1,0 +1,21 @@
+<h1>Number#view</h1>
+<p>Find me in app/views/number/view.html.erb</p>
+<h1>Автоморфные числа</h1>
+<p id="result"><% @result %></p>
+<table border="1">
+  <tr>
+    <td> Порядковый номер </td>
+    <td> Результат</td>
+  </tr>
+
+  <% i = 0 %>
+  <% @result.each do |num| %>
+    <%i = i+1%>
+    <tr>
+      <td> <%= i %> </td>
+      <td> <%= num %> </td>
+    </tr>
+  <% end %>
+
+</table>
+<%= link_to "Вернуться", :numbers_index %>
